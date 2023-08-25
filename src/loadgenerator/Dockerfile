@@ -15,6 +15,7 @@ RUN pip install --prefix="/reqs" -r requirements.txt
 FROM base
 WORKDIR /usr/src/app/
 COPY --from=builder /reqs /usr/local
-COPY ./src/loadgenerator/locustfile.py .
+COPY ./src/loadgenerator/locustfiles/locustfile.py .
+COPY ./src/loadgenerator/locustfiles/springpetclinic-locustfile.py .
 COPY ./src/loadgenerator/people.json .
 ENTRYPOINT locust

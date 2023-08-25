@@ -21,4 +21,4 @@ ENV JAVA_TOOL_OPTIONS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,add
 
 EXPOSE ${SPRING_PETCLINIC_SERVICE_PORT}
 CMD ${JAVA_HOME}/bin/java -Xdebug -Dserver.port=${SPRING_PETCLINIC_SERVICE_PORT} -Djava.security.egd=file:/dev/./urandom -jar /root/spring-petclinic*.jar
-#-Dspring.profiles.active=mysql
+#TODO setup MySql and use -Dspring.profiles.active=mysql

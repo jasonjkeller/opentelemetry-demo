@@ -2,6 +2,10 @@
 
 Runs the Spring PetClinic service: https://github.com/spring-projects/spring-petclinic
 
+## New Relic Requirements
+
+The `NEWRELIC_LICENSE_KEY` environment variable must be set to send data to New Relic.
+
 ## Run
 
 From the project root `opentelemetry-demo/` run: `docker-compose up`
